@@ -1,3 +1,5 @@
+Este documento apresenta padrões de estrutura para organização de projetos de software, abrangendo desde a representação visual da arquitetura utilizando diagramas UML até a organização do código em diferentes camadas (Front-End, Back-End e API). Os exemplos demonstram como estruturar diretórios para cada componente, incluindo a documentação da arquitetura e fluxos de interação do sistema, facilitando o desenvolvimento, a manutenção e a compreensão do projeto.
+
 uml-projects/
 ├── projeto-1/
 │   ├── diagrams/

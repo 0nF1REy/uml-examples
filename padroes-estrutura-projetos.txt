@@ -1,0 +1,122 @@
+uml-projects/
+├── projeto-1/
+│   ├── diagrams/
+│   │   ├── sequencia/
+│   │   ├── classe/
+│   │   ├── caso-de-uso/
+│   │   └── pacote/
+│   └── documentacao/
+│       ├── arquitetura.md
+│       └── fluxos.md
+│
+├── projeto-2/
+│   ├── diagrams/
+│   │   ├── sequencia/
+│   │   ├── classe/
+│   │   ├── caso-de-uso/
+│   │   └── pacote/
+│   └── documentacao/
+│       ├── arquitetura.md
+│       └── fluxos.md
+│
+└── projeto-n/
+    ├── diagrams/
+    │   ├── sequencia/
+    │   ├── classe/
+    │   ├── caso-de-uso/
+    │   └── pacote/
+    └── documentacao/
+        ├── arquitetura.md
+        └── fluxos.md
+
+==============================
+
+├── projeto-1/
+│   ├── front-end/
+│   │   
+│   ├── back-end/
+│   │   └── xxx/
+│   ├── api/
+│   │   └── xxx/
+│   └── documentacao/
+│       ├── arquitetura.md
+│       └── fluxos.md
+
+--------------------------------
+
+front-end/
+├── components/
+│   ├── button-component/
+│   └── navbar-component/
+├── styles/
+│   ├── main.css
+│   └── theme.scss
+└── scripts/
+    ├── app.js
+    └── api.js
+
+--------------------------------
+
+back-end/
+├── controllers/
+│   ├── userController.js
+│   └── magicController.js
+├── models/
+│   ├── userModel.js
+│   └── spellModel.js
+├── routes/
+│   ├── userRoutes.js
+│   └── magicRoutes.js
+└── migrations/
+    ├── createUsersTable.js
+    └── createSpellsTable.js
+
+--------------------------------
+
+api/
+├── controllers/
+│   ├── userApiController.js
+│   └── spellApiController.js
+├── routes/
+│   ├── userApiRoutes.js
+│   └── magicApiRoutes.js
+└── docs/
+    └── swagger.yaml
+
+--------------------------------
+
+exemplo de arquitetura.md:
+
+# Arquitetura do Sistema
+
+## Visão Geral
+O sistema é composto por três principais componentes: Front-End, Back-End e API. O **Front-End** é responsável pela interface de usuário, enquanto o **Back-End** lida com a lógica de negócios e o **API** serve como a camada de comunicação entre o front-end e o back-end.
+
+## Tecnologias Usadas
+- **Front-End**: React, Redux, SASS
+- **Back-End**: Node.js, Express
+- **API**: RESTful API, Swagger para documentação
+- **Banco de Dados**: PostgreSQL
+
+## Diagrama de Arquitetura
+- Front-End -> API (via HTTP requests) -> Back-End -> Banco de Dados
+
+--------------
+
+exemplo de fluxos.md:
+
+# Fluxos de Interação
+
+## Fluxo de Cadastro de Usuário
+
+1. **Usuário** acessa a página de inscrição no Front-End.
+2. O Front-End valida os dados e envia uma requisição POST para o **API**.
+3. O **Back-End** recebe a requisição, valida os dados e armazena o usuário no banco de dados.
+4. O **API** responde com o status de sucesso ou falha, e o Front-End exibe a mensagem correspondente.
+
+## Fluxo de Login de Usuário
+
+1. **Usuário** preenche as credenciais de login.
+2. O Front-End envia uma requisição POST com as credenciais para o **API**.
+3. O **Back-End** verifica as credenciais e retorna um token de autenticação.
+4. O **API** envia o token de volta para o Front-End, que armazena o token localmente para futuras requisições.

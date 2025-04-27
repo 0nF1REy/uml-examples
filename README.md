@@ -15,9 +15,6 @@ O arquivo `sistema-biblioteca-sequencia.mdj` é um exemplo de diagrama de sequê
 
 O arquivo `padroes-estrutura-projetos.txt` contém informações sobre as melhores práticas e recomendações para estruturar projetos UML de maneira eficiente e organizada.
 
----
-Se você tiver dúvidas ou sugestões, sinta-se à vontade para abrir uma issue ou um pull request! 💬
-
 ## 🖼️ Screenshots dos Arquivos
 
 ### `sistema-biblioteca-sequencia.mdj`
